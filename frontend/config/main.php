@@ -10,6 +10,7 @@ return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'layout' => 'template',
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'user' => [
@@ -24,6 +25,10 @@ return [
                     'levels' => ['error', 'warning'],
                 ],
             ],
+        ],
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',

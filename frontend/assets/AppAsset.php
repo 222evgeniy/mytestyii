@@ -21,6 +21,8 @@ class AppAsset extends AssetBundle
         'css/site.css',
     ];
     public $js = [
+        'js/test.js',
+        '//code.jquery.com/jquery-migrate-1.2.1.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
